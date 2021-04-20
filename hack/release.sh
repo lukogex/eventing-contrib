@@ -17,7 +17,7 @@
 # Documentation about this script and how to use it can be found
 # at https://github.com/knative/test-infra/tree/master/ci
 
-source $(dirname $0)/../vendor/knative.dev/test-infra/scripts/release.sh
+source $(dirname $0)/../vendor/knative.dev/hack/release.sh
 
 export GO111MODULE=on
 
@@ -25,17 +25,7 @@ export GO111MODULE=on
 declare -A COMPONENTS
 COMPONENTS=(
   ["appender.yaml"]="config/tools/appender"
-  ["awssqs.yaml"]="awssqs/config"
-  ["camel.yaml"]="camel/source/config"
-  ["couchdb.yaml"]="couchdb/source/config"
   ["event-display.yaml"]="config/tools/event-display"
-  ["github.yaml"]="github/config"
-  ["mt-github.yaml"]="github/config/mt-github"
-  ["gitlab.yaml"]="gitlab/config"
-  ["kafka-source.yaml"]="kafka/source/config"
-  ["kafka-channel.yaml"]="kafka/channel/config"
-  ["natss-channel.yaml"]="natss/config"
-  ["prometheus-source.yaml"]="prometheus/config"
   ["websocket-source.yaml"]="config/tools/websocket-source"
 )
 readonly COMPONENTS

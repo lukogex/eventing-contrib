@@ -1,70 +1,37 @@
 aliases:
-  toc:
+  technical-oversight-committee:
   - evankanderson
   - grantr
   - markusthoemmes
   - mattmoor
-  - tcnghia
+  - rhuss
 
-  # These aliases are for OWNERS of the various Source implementations. These
-  # Are in addition to the repo level OWNERS.
+  eventing-writers:
+  - akashrv
+  - aliok
+  - antoineco
+  - devguyio
+  - grantr
+  - lberk
+  - lionelvillard
+  - matzew
+  - n3wscott
+  - pierDipi
+  - slinkydeveloper
+  - vaikas
+  - zhongduo
 
-  awssqs-approvers:
-    - lberk
-  awssqs-reviewers:
-    - lberk
+  eventing-reviewers:
+  - aslom
+  - nlopezgi
+  - tayarani
+  - tommyreddad
 
-  camel-approvers:
-    - nicolaferraro
-    - matzew
-  camel-reviewers:
-    - nicolaferraro
-    - matzew
-
-  github-approvers:
-    - lberk
-    - mattmoor
-  github-reviewers:
-    - lberk
-    - rootfs
-
-  gitlab-approvers:
-    - sebgoa
-    - tzununbekov
-  gitlab-reviewers:
-    - sebgoa
-    - tzununbekov
-
-  kafka-approvers:
-    - lberk
-    - matzew
-  kafka-reviewers:
-    - lberk
-    - matzew
-
-  natss-approvers:
-    - devguyio
-  natss-reviewers:
-    - devguyio
-
-  couchdb-approvers:
-    - lionelvillard
-  couchdb-reviewers:
-    - lionelvillard
-
-  prometheus-approvers:
-    - syedriko
-    - matzew
-  prometheus-reviewers:
-    - syedriko
-    - matzew
-
-  productivity-approvers:
-  - chaodaiG
+  productivity-writers:
   - chizhg
+  - n3wscott
   productivity-reviewers:
-  - chaodaiG
   - coryrc
-  - chizhg
+  - evankanderson
   - steuhs
   - yt3liu
