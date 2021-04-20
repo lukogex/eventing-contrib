@@ -289,7 +289,7 @@ func (s *SubscriptionsSupervisor) subscribe(channel eventingchannels.ChannelRefe
 	if currentNatssConn == nil {
 		return nil, fmt.Errorf("No Connection to NATSS")
 	}
-	natssSub, err := (*currentNatssConn).Subscribe(ch, mcb, stan.DurableName(sub), stan.SetManualAckMode(), stan.AckWait(1*time.Minute))
+	natssSub, err := (*currentNatssConn).Subscribe(ch, mcb, stan.DurableName(sub), stan.SetManualAckMode(), stan.AckWait(1*time.Minute), stan.MaxInflight(1))
 	if err != nil {
 		s.logger.Error(" Create new NATSS Subscription failed: ", zap.Error(err))
 		if err.Error() == stan.ErrConnectionClosed.Error() {
